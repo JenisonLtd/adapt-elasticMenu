@@ -1,0 +1,24 @@
+<div data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z" class="menu-item-inner {{#if _isVisited}}visited{{/if}}" aria-label="{{linkText}} {{#if _isVisited}}{{_globals._accessibility._ariaLabels.visited}}{{/if}}" {{#if _globals._menu._boxmenu.menuItem}} tabindex="0" {{/if}}>
+    <figure>
+        {{#if _graphic.src}}
+        <img src="{{_graphic.src}}" alt="{{_graphic.alt}}" />
+        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z " /></svg>
+        {{/if}}
+        <figcaption>
+            <div class="menu-item-title">
+                <div class="menu-item-title-inner h3 accessible-text-block" role="heading" aria-level="2" tabindex="0">{{{displayTitle}}}</div>
+            </div>
+            <div class="menu-item-body">
+                <div class="menu-item-body-inner">{{{a11y_text body}}}</div>
+            </div>
+            <div class="menu-item-button">
+                <button role="button" aria-label="{{linkText}} {{#if _isVisited}}{{_globals._accessibility._ariaLabels.visited}}{{/if}}" class="{{#if _isVisited}}visited{{/if}} accessible-text-block">
+                    {{{linkText}}}
+                </button>
+                {{#if duration}}
+                    <span class="menu-item-duration accessible-text-block" role="region" tabindex="0">{{#if _globals._menu._boxmenu.durationLabel}}{{{_globals._menu._boxmenu.durationLabel}}}{{/if}} {{{duration}}}</span>
+                {{/if}}
+            </div>
+        </figcaption>
+    </figure>
+</div>

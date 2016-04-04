@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/contentobject/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Menu",
+      "inputType": "Text",
+      "validators": []
+    },
+    "durationLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Duration:",
+      "inputType": "Text",
+      "validators": []
+    },
+    "menuItem": {
+      "type": "string",
+      "required": true,
+      "default": "Menu item.",
+      "inputType": "Text",
+      "validators": []
+    },
+    "menuEnd": {
+      "type": "string",
+      "required": true,
+      "default": "You have reached the end of the menu.",
+      "inputType": "Text",
+      "validators": []
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object"
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object"
+        },
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      }
+    }
+  }
+}

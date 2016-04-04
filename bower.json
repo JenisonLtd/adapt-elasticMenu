@@ -1,0 +1,18 @@
+{
+  "name": "adapt-elasticMenu",
+  "version": "1.0.0",
+  "framework": "^2.0.0",
+  "homepage": "https://github.com/JenisonLtd/adapt-elasticMenu",
+  "issues": "https://github.com/JenisonLtd/adapt-elasticMenu/issues",
+  "authors": [ "Jack Ward" ],
+  "displayName": "Elastic menu",
+  "menu": "elasticmenu",
+  "description": "",
+  "main": "js/adapt-elasticMenu.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-menu"
+  ],
+  "license": "MIT",
+  "targetAttribute": "_elasticMenu"
+}
